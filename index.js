@@ -1,17 +1,46 @@
-var i=0;
-var todo=" ";
+
+var x;
+
+var aux;
+var hatz={todo1, todo2, todo3,todo4, todo5, todo6, todo7, todo8, todo9, todo10,todo11, todo12, todo13, todo14, todo15,};
+var todo1=" ";
+var todo2=" ";
+var todo3=" ";
+var todo4=" ";
+var todo5=" ";
+var todo6=" ";
+var todo7=" ";
+var todo8=" ";
+var todo9=" ";
+var todo10=" ";
+var todo11=" ";
+var todo12=" ";
+var todo13=" ";
+var todo14=" ";
+var todo15=" ";
+
+
 function add(){
-    i++;
-    var hatz={todo, todo2, todo3,todo4, todo5, todo6, todo7, todo8, todo9, todo10,todo11, todo12, todo13, todo14, todo15, todo16, fictiva=" "};
-    todo=document.getElementById("input").value;
-    for(x in person){
-        person[x+1]=person[x];
+    var i=0;
+    for(x in hatz){
+        i++;
+        aux=hatz[15-i];
+        hatz[15-i]=hatz[15-i+1];
+        hatz[15-i+1]=aux;
+        if(i>15) break;
+
     }
+
+    
+}
+
+    
+    
     
 
 
 
-    document.getElementById("todo").innerHTML = todo;
+    document.getElementById("todo1").innerHTML = todo1;
     document.getElementById("todo2").innerHTML = todo2;
     document.getElementById("todo3").innerHTML = todo3;
     document.getElementById("todo4").innerHTML = todo4;
@@ -27,4 +56,3 @@ function add(){
     document.getElementById("todo14").innerHTML = todo14;
     document.getElementById("todo15").innerHTML = todo15;
     
-}
