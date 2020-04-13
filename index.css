@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+.verdemare{
+    color:rgb(95, 255, 95);
+    font-size:300%;
+    font-weight: lighter;}
+.verdemic{
+    color:rgb(255, 255, 255);
+}
+.input{
+    background-color: black;
+    border-color: rgb(255, 255, 255);
+    width:900px;
+    height:40px;
+    border-style:hidden hidden solid hidden;
+    color:white;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+.input::placeholder{
+    color:rgb(99, 99, 99);
+    font-weight:bolder;
+    font-size: 125%;}
+
+.input::ms-input-placeholder{
+    color:rgb(99, 99, 99);
+    font-weight:bolder;
+    font-size: 125%;}
+.input:hover{
+    border-color: rgb(95, 255, 95);
+    
+}
+.add{
+    background-color: black;
+    color: rgb(0, 255, 30);
+    font-size: 200%;
+    font-weight:bolder;
+    border-color: black;
+
+}
+p{
+    color:white;
+}
