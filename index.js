@@ -22,12 +22,13 @@ var todo15=" ";
 
 function add(){
     var i=0;
+    document.getElementById("todo1").innerHTML = todo1;
     for(x in hatz){
         i++;
         aux=hatz[15-i];
         hatz[15-i]=hatz[15-i+1];
         hatz[15-i+1]=aux;
-        if(i>15) break;
+        if(i>14) break;
 
     }
 
