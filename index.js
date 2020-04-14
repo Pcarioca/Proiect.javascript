@@ -19,21 +19,13 @@ var todo13=" ";
 var todo14=" ";
 var todo15=" ";
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    // PUNE CODUL TAU AICI
 
-function add(){
-    var i=0;
-    document.getElementById("todo1").innerHTML = todo1;
-    for(x in hatz){
-        i++;
-        aux=hatz[15-i];
-        hatz[15-i]=hatz[15-i+1];
-        hatz[15-i+1]=aux;
-        if(i>14) break;
 
-    }
 
-    
-}
+
+
 
     
     
@@ -56,4 +48,18 @@ function add(){
     document.getElementById("todo13").innerHTML = todo13;
     document.getElementById("todo14").innerHTML = todo14;
     document.getElementById("todo15").innerHTML = todo15;
+    });
+function add(){
+    var i=0;
+    document.getElementById("todo1").innerHTML = todo1;
+    for(x in hatz){
+        i++;
+        aux=hatz[15-i+1];
+        hatz[15-i+1]=hatz[15-i+2];
+        hatz[15-i+2]=aux;
+        if(i>14) break;
+
+    }
+
     
+}
