@@ -1,5 +1,5 @@
 
-var x;
+
 
 var aux;
 var hatz=[todo1, todo2, todo3,todo4, todo5, todo6, todo7, todo8, todo9, todo10,todo11, todo12, todo13, todo14, todo15,];
@@ -19,25 +19,20 @@ var todo13=" ";
 var todo14=" ";
 var todo15=" ";
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    // PUNE CODUL TAU AICI
-function add(){
-    var i=0;
-    document.getElementById("todo1").innerHTML = todo1;
-    for(x of hatz){
-        i++;
-        aux=hatz[15-i+2];
-        hatz[15-i+2]=hatz[15-i+3];
-        hatz[15-i+3]=aux;
-        alert("am intrat in for fwa")
-        if(i>13) break;
-
-
+var i=0;
+    document.addEventListener('DOMContentLoaded', (event)=>{
+    document.getElementById("buton").onclick=add();
+    function add(){
+    document.getElementById("todo1").innerHTML = hatz[i];
+    alert("am intrat in functie");
+    i++;
     }
+   
+
 
     
-}
-document.getElementById("buton").onclick=add();
+
+
 
 
 
@@ -62,4 +57,5 @@ document.getElementById("buton").onclick=add();
     document.getElementById("todo13").innerHTML = todo13;
     document.getElementById("todo14").innerHTML = todo14;
     document.getElementById("todo15").innerHTML = todo15;
-    });
+
+ });
