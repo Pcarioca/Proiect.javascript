@@ -21,7 +21,7 @@ var todo15=" ";
 
 document.addEventListener('DOMContentLoaded', (event) => {
     // PUNE CODUL TAU AICI
-
+    document.getElementById("buton").onClick=add();
 
 
 
